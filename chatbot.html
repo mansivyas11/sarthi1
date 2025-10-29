@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chatbot — Saarthi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><img src="assets/logo-placeholder.png" alt=""><h1>Saarthi</h1></div>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="discussion.html">Discussion</a>
+        <a href="chatbot.html" class="active">AI Chatbot</a>
+      </nav>
+      <div class="credits-box"><p>Credits</p><p id="credits-sidebar-chat">0</p></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><h2>Ask Saarthi (Demo)</h2></header>
+      <section class="container">
+        <div class="chat-demo">
+          <div id="chatArea" class="chat-area"></div>
+          <input id="userInput" placeholder="Type a question...">
+          <button id="sendBtn">Send</button>
+        </div>
+        <p class="note">Note: This is a demo chatbot. You can connect a real AI API later.</p>
+      </section>
+
+      <footer class="footer"><p>© 2025 Saarthi</p></footer>
+    </main>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saarthi — Student Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="images\logo.jpg" alt="Saarthi logo" />
+        <h1>Saarthi</h1>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="discussion.html">Discussion</a>
+        <a href="chatbot.html">AI Chatbot</a>
+      </nav>
+      <div class="credits-box">
+        <p>Credits</p>
+        <p id="credits-sidebar">0</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h2>Welcome to Saarthi</h2>
+        <div class="top-actions">
+          <button id="creditBtn">Get Credits</button>
+        </div>
+      </header>
+
+      <section class="dashboard container">
+        <div class="card">
+          <h3>Overview</h3>
+          <p>Manage timetable, ask doubts, submit tasks, set reminders and discuss with peers.</p>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <h4>Tasks</h4>
+            <p>Add tasks, set reminders, earn credits when you complete them.</p>
+            <a class="small-btn" href="tasks.html">Open Tasks</a>
+          </div>
+
+          <div class="card">
+            <h4>Timetable</h4>
+            <p>View and manage your weekly class schedule.</p>
+            <a class="small-btn" href="timetable.html">Open Timetable</a>
+          </div>
+
+          <div class="card">
+            <h4>Discussion</h4>
+            <p>Post questions and help classmates.</p>
+            <a class="small-btn" href="discussion.html">Open Discussion</a>
+          </div>
+
+          <div class="card">
+            <h4>AI Chatbot</h4>
+            <p>Ask Saarthi quick questions. (Demo chatbot)</p>
+            <a class="small-btn" href="chatbot.html">Open Chatbot</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© 2025 Saarthi — Designed by Kirti</p>
+      </footer>
+    </main>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

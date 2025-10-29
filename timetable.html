@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Timetable — Saarthi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><img src="assets/logo-placeholder.png" alt=""><h1>Saarthi</h1></div>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="timetable.html" class="active">Timetable</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="discussion.html">Discussion</a>
+        <a href="chatbot.html">AI Chatbot</a>
+      </nav>
+      <div class="credits-box"><p>Credits</p><p id="credits-sidebar-tt">0</p></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><h2>Timetable</h2></header>
+      <section class="container">
+        <h3>Weekly Timetable</h3>
+        <table class="timetable">
+          <thead><tr><th>Day</th><th>Subject</th><th>Time</th></tr></thead>
+          <tbody id="tt-body">
+            <tr><td>Monday</td><td>Math</td><td>09:00 - 10:00</td></tr>
+            <tr><td>Tuesday</td><td>Physics</td><td>10:00 - 11:00</td></tr>
+            <tr><td>Wednesday</td><td>Computer Science</td><td>11:00 - 12:00</td></tr>
+          </tbody>
+        </table>
+
+        <h4>Add / Edit Entry</h4>
+        <input id="tt-day" placeholder="Day (e.g., Monday)"><input id="tt-sub" placeholder="Subject"><input id="tt-time" placeholder="09:00 - 10:00">
+        <button id="add-tt">Add Entry</button>
+      </section>
+
+      <footer class="footer"><p>© 2025 Saarthi</p></footer>
+    </main>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

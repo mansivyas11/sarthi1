@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Discussion — Saarthi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><img src="assets/logo-placeholder.png" alt=""><h1>Saarthi</h1></div>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="discussion.html" class="active">Discussion</a>
+        <a href="chatbot.html">AI Chatbot</a>
+      </nav>
+      <div class="credits-box"><p>Credits</p><p id="credits-sidebar-disc">0</p></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><h2>Peer Discussion</h2></header>
+      <section class="container">
+        <textarea id="message" placeholder="Ask a question or share a note"></textarea>
+        <button id="postBtn">Post</button>
+        <div id="discussion-board" class="discussion-board"></div>
+      </section>
+
+      <footer class="footer"><p>© 2025 Saarthi</p></footer>
+    </main>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

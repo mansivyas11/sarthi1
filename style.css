@@ -1,0 +1,64 @@
+/* Global and dashboard layout */
+:root{
+  --purple:#6a0dad;
+  --light:#d1b3ff;
+  --bg:#f9f6ff;
+  --card:#ffffff;
+  --muted:#666;
+}
+
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:var(--bg);color:#222}
+
+/* App layout */
+.app{display:flex;min-height:100vh}
+.sidebar{width:220px;background:var(--purple);color:#fff;padding:18px;display:flex;flex-direction:column;gap:18px}
+.brand{display:flex;gap:12px;align-items:center}
+.brand img{width:40px;height:40px;border-radius:6px;background:#fff}
+.brand h1{font-size:20px;margin:0}
+.sidebar nav{display:flex;flex-direction:column;gap:8px}
+.sidebar a{color:#fff;text-decoration:none;padding:8px;border-radius:6px}
+.sidebar a.active, .sidebar a:hover{background:rgba(255,255,255,0.08)}
+.credits-box{margin-top:auto;background:rgba(255,255,255,0.06);padding:10px;border-radius:8px;text-align:center}
+
+/* main area */
+.main{flex:1;display:flex;flex-direction:column}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;background:transparent}
+.container{padding:24px}
+.footer{text-align:center;padding:18px;color:var(--muted);margin-top:auto}
+
+/* cards and grid */
+.card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(106,13,173,0.06)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+.small-btn{display:inline-block;margin-top:10px;padding:8px 12px;background:var(--purple);color:#fff;border-radius:8px;text-decoration:none}
+
+/* Timetable */
+.timetable{width:100%;border-collapse:collapse;margin-top:12px}
+.timetable th{background:var(--purple);color:#fff;padding:10px;text-align:left}
+.timetable td{padding:10px;border-bottom:1px solid #eee}
+
+/* Tasks */
+.task-form{display:flex;gap:10px;flex-wrap:wrap}
+.task-form input[type="text"], .task-form input[type="datetime-local"]{padding:10px;border-radius:8px;border:1px solid #ddd;width:220px}
+.task-list{list-style:none;padding:0;margin-top:16px}
+.task{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:10px;background:linear-gradient(180deg, #fff,#f7f2ff);border-radius:8px;margin-bottom:8px}
+
+/* Discussion */
+textarea{width:100%;min-height:80px;padding:10px;border-radius:8px;border:1px solid #ddd}
+.discussion-board{margin-top:12px}
+
+/* Chat */
+.chat-demo{display:flex;flex-direction:column;gap:8px}
+.chat-area{min-height:200px;border:1px solid #e7e0ff;padding:12px;border-radius:8px;background:#fff;overflow:auto}
+.chat-area p{margin:8px 0;padding:8px;border-radius:6px}
+.chat-area p.user{background:#f0f0f0;text-align:right}
+.chat-area p.bot{background:#efe8ff}
+
+/* Responsive */
+@media (max-width:800px){
+  .app{flex-direction:column}
+  .sidebar{width:100%;flex-direction:row;align-items:center;overflow:auto;padding:10px}
+  .sidebar nav{flex-direction:row;gap:6px}
+  .credits-box{display:none}
+  .main{padding:0}
+}
