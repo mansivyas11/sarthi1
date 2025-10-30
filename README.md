@@ -12,7 +12,7 @@ Saarthi is a productivity app designed to help students manage their study sched
 
 Clone the repository:
 ```bash
-git clone https://github.com/[your-username]/saarthi-app.git
+git clone https://github.com/[mansivyas]/saarthi-app.git
 cd saarthi-app
 ```
 Install dependencies:
@@ -31,7 +31,7 @@ Or follow setup instructions for your tech stack.
 
 ## Technologies
 
-- [List your technologies here, e.g., React Native, Node.js, Flutter, etc.]
+- [fronted technologies -HTML,CSS,JavaScript and tools are visual studio code,github]
 
 ## Contributing
 
@@ -39,9 +39,9 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ## License
 
-[Specify your license here]
+[MIT License]
 
 ## Acknowledgements
 
 - Inspired by students’ need for personalized study scheduling
-- [Any libraries, frameworks, or contributors]
+  
